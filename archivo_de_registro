@@ -1,0 +1,9 @@
+2024-10-24 18:38:36.108 GMT [17916] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-10-24 18:38:36.114 GMT [17916] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-10-24 18:38:36.114 GMT [17916] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-10-24 18:38:36.216 GMT [528] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-10-23 15:05:47 GMT
+2024-10-24 18:38:39.194 GMT [528] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-10-24 18:38:39.203 GMT [528] LOG:  redo comienza en 0/2595F30
+2024-10-24 18:38:39.203 GMT [528] LOG:  largo de registro no válido en 0/2596030: se esperaba 24, se obtuvo 0
+2024-10-24 18:38:39.203 GMT [528] LOG:  redo listo en 0/2595FE0
+2024-10-24 18:38:39.280 GMT [17916] LOG:  el sistema de bases de datos está listo para aceptar conexiones
