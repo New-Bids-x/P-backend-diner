@@ -7,3 +7,9 @@
 2024-10-24 18:38:39.203 GMT [528] LOG:  largo de registro no válido en 0/2596030: se esperaba 24, se obtuvo 0
 2024-10-24 18:38:39.203 GMT [528] LOG:  redo listo en 0/2595FE0
 2024-10-24 18:38:39.280 GMT [17916] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-10-24 18:39:57.840 GMT [32772] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-10-24 18:39:57.840 GMT [32772] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-10-24 18:39:57.870 GMT [27592] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-10-24 18:39:57.870 GMT [27592] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
