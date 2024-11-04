@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+use Laravel\Sanctum\HasApiTokens;
 
 class AuthController extends Controller
 {
@@ -39,11 +40,11 @@ class AuthController extends Controller
                 'email' => ['Las credenciales son incorrectas.'],
             ]);
         }
+        return response()->json(['message' => 'Inicio secion exitosamente'], 201);
+        // $user = Auth::user(); 
+        // $token = $user->createToken('auth_token')->plainTextToken;
 
-        $user = Auth::user();
-        $token = $user->createToken('auth_token')->plainTextToken;
-
-        return response()->json(['access_token' => $token, 'token_type' => 'Bearer']);
+        // return response()->json(['access_token' => $token, 'token_type' => 'Bearer']);
     }
 
     public function logout(Request $request)

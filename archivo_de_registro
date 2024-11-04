@@ -13,3 +13,42 @@
 2024-10-24 18:39:57.870 GMT [27592] FATAL:  la autentificación password falló para el usuario «postgres»
 2024-10-24 18:39:57.870 GMT [27592] DETALLE:  La contraseña no coincide para el usuario «postgres».
 	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-10-24 19:25:40.284 GMT [22480] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-10-24 19:25:40.284 GMT [18984] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-10-30 12:00:43.488 GMT [29376] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-10-30 12:00:43.492 GMT [29376] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-10-30 12:00:43.492 GMT [29376] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-10-30 12:00:43.604 GMT [36572] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-10-30 02:53:54 GMT
+2024-10-30 12:00:47.059 GMT [36572] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-10-30 12:00:47.067 GMT [36572] LOG:  redo comienza en 0/27793A8
+2024-10-30 12:00:47.067 GMT [36572] LOG:  largo de registro no válido en 0/2779490: se esperaba 24, se obtuvo 0
+2024-10-30 12:00:47.067 GMT [36572] LOG:  redo listo en 0/2779458
+2024-10-30 12:00:47.154 GMT [29376] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-10-30 12:01:18.663 GMT [7780] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-10-30 12:01:18.667 GMT [7780] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-10-30 12:01:18.667 GMT [7780] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-10-30 12:01:18.729 GMT [14568] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-10-30 12:00:47 GMT
+2024-10-30 12:01:20.589 GMT [14568] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-10-30 12:01:20.598 GMT [14568] LOG:  redo comienza en 0/2779508
+2024-10-30 12:01:20.598 GMT [14568] LOG:  largo de registro no válido en 0/2779540: se esperaba 24, se obtuvo 0
+2024-10-30 12:01:20.598 GMT [14568] LOG:  redo listo en 0/2779508
+2024-10-30 12:01:20.669 GMT [7780] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-10-30 15:24:40.590 GMT [10940] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-10-30 15:24:40.590 GMT [22628] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-10-30 15:24:40.590 GMT [37076] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-10-31 10:36:21.201 GMT [17092] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-10-31 10:36:21.210 GMT [17092] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-10-31 10:36:21.210 GMT [17092] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-10-31 10:36:21.299 GMT [7604] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-10-30 13:11:21 GMT
+2024-10-31 10:36:23.961 GMT [7604] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-10-31 10:36:23.967 GMT [7604] LOG:  redo comienza en 0/27A59C8
+2024-10-31 10:36:23.967 GMT [7604] LOG:  largo de registro no válido en 0/27A5AB0: se esperaba 24, se obtuvo 0
+2024-10-31 10:36:23.967 GMT [7604] LOG:  redo listo en 0/27A5A78
+2024-10-31 10:36:24.029 GMT [17092] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-10-31 22:23:53.986 GMT [6928] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
