@@ -18,7 +18,7 @@ class AuthenticatedUserController extends Controller
         if (!$user || !Hash::check($request->password, $user->password)) {
             throw ValidationException::withMessages([
                 "msg" => ["Las credenciales son invalidas"]
-            ]);
+            ]);w
         }
 
         $token = $user->createToken($request->emailuser)->plainTextToken;
