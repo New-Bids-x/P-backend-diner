@@ -10,8 +10,19 @@ use App\Http\Controllers\PedidoController;
 use App\Http\Controllers\AuthController;
 
 use App\Http\Controllers\auth\AuthenticatedUserController;
+use App\Http\Controllers\ProductoController;
 
 use App\Http\Controllers\PedidoRestauranteController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
+
+Route::post('/', [ProductController::class, 'store']);
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products2', [ProductController::class, 'index2']);
+Route::delete('/products', [ProductController::class, 'deleteAll']);
+
+Route::post('/products', [ProductController::class, 'store']);
+
 
 Route::post('/pedidos', [PedidoRestauranteController::class, 'store']);
 Route::get('/pedidos', [PedidoRestauranteController::class, 'index']);
@@ -47,3 +58,11 @@ Route::apiResource('pedido', PedidoController::class);
 Route::get('/test-connection', function () {
     return response()->json(['message' => 'Conexión exitosa con el backend'], 200);
 });
+
+Route::post('/productos', [ProductoController::class, 'store']);
+Route::get('/productos/{id}', [ProductoController::class, 'show']);
+
+Route::get('/categories', [CategoryController::class, 'index']);
+Route::post('/categories', [CategoryController::class, 'store']);
+
+Route::get('/categories/{id}/products', [CategoryController::class, 'getProductsByCategory']);
