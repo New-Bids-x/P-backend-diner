@@ -52,3 +52,131 @@
 2024-10-31 10:36:24.029 GMT [17092] LOG:  el sistema de bases de datos está listo para aceptar conexiones
 2024-10-31 22:23:53.986 GMT [6928] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
 	
+2024-11-07 10:07:49.246 GMT [7072] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-11-07 10:07:49.249 GMT [7072] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-11-07 10:07:49.249 GMT [7072] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-11-07 10:07:49.438 GMT [1340] LOG:  el sistema de bases de datos fue apagado en 2024-11-07 10:04:35 GMT
+2024-11-07 10:07:49.474 GMT [7072] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-11-07 12:41:26.036 GMT [7072] LOG:  proceso de servidor (PID 368) fue terminado por una excepción 0xC000026B
+2024-11-07 12:41:26.036 GMT [7072] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-07 12:41:26.039 GMT [7072] LOG:  terminando todos los otros procesos de servidor activos
+2024-11-07 12:41:26.069 GMT [24492] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-11-07 12:41:26.069 GMT [24492] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-11-07 12:41:26.069 GMT [24492] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-11-07 12:41:26.073 GMT [13144] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-11-07 12:41:26.073 GMT [13144] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-11-07 12:41:26.073 GMT [13144] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-11-07 12:41:26.099 GMT [12344] WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2024-11-07 12:41:26.099 GMT [12344] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2024-11-07 12:41:26.099 GMT [12344] HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2024-11-07 12:41:26.133 GMT [7072] LOG:  todos los procesos fueron terminados; reinicializando
+2024-11-07 12:41:26.240 GMT [7072] LOG:  proceso de inicio (PID 8760) fue terminado por una excepción 0xC000026B
+2024-11-07 12:41:26.240 GMT [7072] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-07 12:41:26.240 GMT [7072] LOG:  abortando el inicio debido a una falla en el procesamiento de inicio
+2024-11-07 12:41:26.250 GMT [7072] LOG:  el sistema de bases de datos está apagado
+2024-11-14 10:13:07.996 GMT [32588] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-11-14 10:13:08.000 GMT [32588] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-11-14 10:13:08.000 GMT [32588] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-11-14 10:13:08.093 GMT [11768] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-11-13 02:23:33 GMT
+2024-11-14 10:13:10.390 GMT [11768] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-11-14 10:13:10.396 GMT [11768] LOG:  redo comienza en 0/2AFFA00
+2024-11-14 10:13:10.397 GMT [11768] LOG:  largo de registro no válido en 0/2AFFAE8: se esperaba 24, se obtuvo 0
+2024-11-14 10:13:10.397 GMT [11768] LOG:  redo listo en 0/2AFFAB0
+2024-11-14 10:13:10.460 GMT [32588] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-11-14 11:51:54.614 GMT [32588] LOG:  proceso de servidor (PID 30576) fue terminado por una excepción 0xC000026B
+2024-11-14 11:51:54.614 GMT [32588] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-14 11:51:54.615 GMT [32588] LOG:  terminando todos los otros procesos de servidor activos
+2024-11-14 11:51:54.623 GMT [5912] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-11-14 11:51:54.623 GMT [5912] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-11-14 11:51:54.623 GMT [5912] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-11-14 11:51:54.623 GMT [9108] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-11-14 11:51:54.623 GMT [9108] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-11-14 11:51:54.623 GMT [9108] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-11-14 11:51:54.631 GMT [27484] WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2024-11-14 11:51:54.631 GMT [27484] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2024-11-14 11:51:54.631 GMT [27484] HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2024-11-14 11:51:56.667 GMT [32588] LOG:  todos los procesos fueron terminados; reinicializando
+2024-11-14 11:51:58.418 GMT [32588] LOG:  proceso de inicio (PID 8424) fue terminado por una excepción 0xC000026B
+2024-11-14 11:51:58.418 GMT [32588] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-14 11:51:58.419 GMT [32588] LOG:  abortando el inicio debido a una falla en el procesamiento de inicio
+2024-11-14 11:51:58.475 GMT [32588] LOG:  el sistema de bases de datos está apagado
+2024-11-14 12:52:22.236 GMT [25260] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-11-14 12:52:22.241 GMT [25260] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-11-14 12:52:22.241 GMT [25260] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-11-14 12:52:22.771 GMT [20300] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-11-14 11:33:10 GMT
+2024-11-14 12:52:28.636 GMT [20300] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-11-14 12:52:28.677 GMT [20300] LOG:  redo comienza en 0/2B03980
+2024-11-14 12:52:28.677 GMT [20300] LOG:  largo de registro no válido en 0/2B03A68: se esperaba 24, se obtuvo 0
+2024-11-14 12:52:28.677 GMT [20300] LOG:  redo listo en 0/2B03A30
+2024-11-14 12:52:28.758 GMT [25260] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-11-14 12:54:05.911 GMT [24760] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-11-14 12:54:05.911 GMT [24760] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-11-14 12:54:05.944 GMT [18928] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-11-14 12:54:05.944 GMT [18928] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-11-14 13:33:09.162 GMT [27408] ERROR:  no existe la relaciÃ³n Â«pedido_restauranteÂ» en carÃ¡cter 15
+2024-11-14 13:33:09.162 GMT [27408] SENTENCIA:  select * from pedido_restaurante
+2024-11-14 18:45:18.191 GMT [27788] FATAL:  terminando la conexiÃ³n debido al tÃ©rmino inesperado de postmaster
+2024-11-14 18:45:18.192 GMT [1576] FATAL:  terminando la conexiÃ³n debido al tÃ©rmino inesperado de postmaster
+2024-11-14 18:45:18.195 GMT [27408] FATAL:  terminando la conexiÃ³n debido al tÃ©rmino inesperado de postmaster
+2024-11-14 18:45:18.203 GMT [11092] FATAL:  terminando la conexiÃ³n debido al tÃ©rmino inesperado de postmaster
+2024-11-27 22:45:41.994 GMT [22164] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-11-27 22:45:41.998 GMT [22164] LOG:  no se pudo enlazar a la dirección IPv6 «::1»: Permission denied
+2024-11-27 22:45:41.998 GMT [22164] HINT:  ¿Hay otro postmaster corriendo en el puerto 5432? Si no, aguarde unos segundos y reintente.
+2024-11-27 22:45:41.998 GMT [22164] LOG:  no se pudo enlazar a la dirección IPv4 «127.0.0.1»: Permission denied
+2024-11-27 22:45:41.998 GMT [22164] HINT:  ¿Hay otro postmaster corriendo en el puerto 5432? Si no, aguarde unos segundos y reintente.
+2024-11-27 22:45:41.998 GMT [22164] WARNING:  no se pudo crear el socket de escucha para «localhost»
+2024-11-27 22:45:41.998 GMT [22164] FATAL:  no se pudo crear ningún socket TCP/IP
+2024-11-27 22:45:41.998 GMT [22164] LOG:  el sistema de bases de datos está apagado
+2024-11-27 22:46:07.870 GMT [21868] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-11-27 22:46:07.874 GMT [21868] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-11-27 22:46:07.874 GMT [21868] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-11-27 22:46:07.985 GMT [3724] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-11-26 13:17:50 GMT
+2024-11-27 22:46:09.974 GMT [3724] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-11-27 22:46:09.981 GMT [3724] LOG:  redo comienza en 0/2B4F180
+2024-11-27 22:46:09.981 GMT [3724] LOG:  largo de registro no válido en 0/2B4F1B8: se esperaba 24, se obtuvo 0
+2024-11-27 22:46:09.981 GMT [3724] LOG:  redo listo en 0/2B4F180
+2024-11-27 22:46:10.044 GMT [21868] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-11-27 22:47:01.586 GMT [22996] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-11-27 22:47:01.586 GMT [13860] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-11-28 11:31:06.278 GMT [22928] ERROR:  no existe la columna products.category_id en carÃ¡cter 32
+2024-11-28 11:31:06.278 GMT [22928] HINT:  Probablemente quiera hacer referencia a la columna Â«products.categoriaÂ».
+2024-11-28 11:31:06.278 GMT [22928] SENTENCIA:  select * from "products" where "products"."category_id" = $1 and "products"."category_id" is not null
+2024-11-28 11:31:13.129 GMT [25176] ERROR:  no existe la columna products.category_id en carÃ¡cter 32
+2024-11-28 11:31:13.129 GMT [25176] HINT:  Probablemente quiera hacer referencia a la columna Â«products.categoriaÂ».
+2024-11-28 11:31:13.129 GMT [25176] SENTENCIA:  select * from "products" where "products"."category_id" = $1 and "products"."category_id" is not null
+2024-11-28 11:42:30.735 GMT [21868] LOG:  proceso de servidor (PID 33032) fue terminado por una excepción 0x40010004
+2024-11-28 11:42:30.735 GMT [21868] DETALLE:  El proceso que falló estaba ejecutando: 
+	        SELECT
+	            roles.oid as id, roles.rolname as name,
+	            roles.rolsuper as is_superuser,
+	            CASE WHEN roles.rolsuper THEN true ELSE roles.rolcreaterole END as
+	            can_create_role,
+	            CASE WHEN roles.rolsuper THEN true
+	            ELSE roles.rolcreatedb END as can_create_db,
+	            CASE WHEN 'pg_signal_backend'=ANY(ARRAY(WITH RECURSIVE cte AS (
+	            SELECT pg_roles.oid,pg_roles.rolname FROM pg_roles
+	                WHERE pg_roles.oid = roles.oid
+	            UNION ALL
+	            SELECT m.roleid,pgr.rolname FROM cte cte_1
+	                JOIN pg_auth_members m ON m.member = cte_1.oid
+	                JOIN pg_roles pgr ON pgr.oid = m.roleid)
+	            SELECT rolname  FROM cte)) THEN True
+	            ELSE False END as can_signal_backend
+	        FROM
+	            pg_catalog.pg_roles as roles
+	        WHERE
+	            rolname = current_user
+2024-11-28 11:42:30.735 GMT [21868] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-28 11:42:30.735 GMT [21868] LOG:  terminando todos los otros procesos de servidor activos
+2024-11-28 11:42:30.822 GMT [22276] WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2024-11-28 11:42:30.822 GMT [22276] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2024-11-28 11:42:30.822 GMT [22276] HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2024-11-28 11:42:30.879 GMT [21868] LOG:  todos los procesos fueron terminados; reinicializando
+2024-11-28 11:42:30.968 GMT [21868] LOG:  proceso de inicio (PID 34252) fue terminado por una excepción 0xC000026B
+2024-11-28 11:42:30.968 GMT [21868] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-11-28 11:42:30.968 GMT [21868] LOG:  abortando el inicio debido a una falla en el procesamiento de inicio
+2024-11-28 11:42:30.972 GMT [21868] LOG:  el sistema de bases de datos está apagado
