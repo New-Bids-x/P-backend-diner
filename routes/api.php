@@ -15,6 +15,11 @@ use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\PedidoRestauranteController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\OrderController;
+
+
+Route::post('/pedidos2', [OrderController::class, 'store']);
+Route::get('/pedidos2', [OrderController::class, 'index']);
 
 Route::post('/', [ProductController::class, 'store']);
 Route::get('/products', [ProductController::class, 'index']);
@@ -29,7 +34,8 @@ Route::get('/pedidos', [PedidoRestauranteController::class, 'index']);
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('/check-session', [AuthController::class, 'checkSession']);
 
 
 // Route::post('login', [AuthController::class, 'login']);

@@ -49,13 +49,19 @@ class AuthController extends Controller
         // Creamos el token de autenticación (si estás usando Sanctum o Passport)
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        // Devolvemos el token al cliente con el tipo de autorización Bearer
+        // Devolvemos el token y los datos del usuario
         return response()->json([
             'access_token' => $token,
             'token_type' => 'Bearer',
+            'user' => [
+                'id' => $user->id,
+                'name' => $user->name,
+                'email' => $user->email,
+            ],
             'message' => 'Inicio sesión exitosamente',
         ], 200);
     }
+
 
 
     public function logout(Request $request)
@@ -63,4 +69,33 @@ class AuthController extends Controller
         $request->user()->tokens()->delete();
         return response()->json(['message' => 'Sesión cerrada correctamente']);
     }
+
+    public function checkSession(Request $request)
+    {
+        $token = $request->bearerToken();  // Obtener el token de la cabecera
+
+        // Si el token existe, intentar obtener al usuario
+        if ($token) {
+            $user = \Laravel\Sanctum\PersonalAccessToken::findToken($token);
+
+            if ($user) {
+                return response()->json([
+                    'isAuthenticated' => true,
+                    'message' => 'Sesión activa'
+                ]);
+            } else {
+                return response()->json([
+                    'isAuthenticated' => false,
+                    'message' => 'No se pudo autenticar el token'
+                ]);
+            }
+        } else {
+            return response()->json([
+                'isAuthenticated' => false,
+                'message' => 'Token no proporcionado'
+            ]);
+        }
+    }
+
+
 }

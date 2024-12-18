@@ -180,3 +180,101 @@
 2024-11-28 11:42:30.968 GMT [21868] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
 2024-11-28 11:42:30.968 GMT [21868] LOG:  abortando el inicio debido a una falla en el procesamiento de inicio
 2024-11-28 11:42:30.972 GMT [21868] LOG:  el sistema de bases de datos está apagado
+2024-12-12 02:13:21.178 GMT [15240] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-12-12 02:13:21.190 GMT [15240] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-12-12 02:13:21.190 GMT [15240] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-12-12 02:13:21.403 GMT [3276] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-12-11 15:58:54 GMT
+2024-12-12 02:13:28.179 GMT [3276] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-12-12 02:13:28.200 GMT [3276] LOG:  redo comienza en 0/311C440
+2024-12-12 02:13:28.200 GMT [3276] LOG:  largo de registro no válido en 0/311C528: se esperaba 24, se obtuvo 0
+2024-12-12 02:13:28.200 GMT [3276] LOG:  redo listo en 0/311C4F0
+2024-12-12 02:13:28.329 GMT [15240] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-12-12 02:15:20.070 GMT [13660] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-12-12 02:15:20.070 GMT [13660] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-12-12 02:15:20.149 GMT [27508] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-12-12 02:15:20.149 GMT [27508] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-12-12 02:40:19.549 GMT [4724] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-12-12 02:40:19.563 GMT [4724] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-12-12 02:40:19.563 GMT [4724] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-12-12 02:40:19.805 GMT [2616] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-12-12 02:13:28 GMT
+2024-12-12 02:40:30.761 GMT [2616] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-12-12 02:40:30.792 GMT [2616] LOG:  redo comienza en 0/311C5A0
+2024-12-12 02:40:30.792 GMT [2616] LOG:  largo de registro no válido en 0/311C5D8: se esperaba 24, se obtuvo 0
+2024-12-12 02:40:30.792 GMT [2616] LOG:  redo listo en 0/311C5A0
+2024-12-12 02:40:30.980 GMT [4724] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-12-12 02:41:57.596 GMT [22224] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-12-12 02:41:57.596 GMT [22224] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-12-12 02:41:57.680 GMT [20720] FATAL:  la autentificación password falló para el usuario «postgres»
+2024-12-12 02:41:57.680 GMT [20720] DETALLE:  La contraseña no coincide para el usuario «postgres».
+	La conexión coincidió con la línea 86 de pg_hba.conf: «host    all             all             ::1/128                 password»
+2024-12-12 11:28:54.569 GMT [28480] ERROR:  error de sintaxis en o cerca de Â«.Â» en carÃ¡cter 16
+2024-12-12 11:28:54.569 GMT [28480] SENTENCIA:  SELECT *
+		FROM .users;
+2024-12-12 11:46:15.280 GMT [4724] LOG:  proceso de servidor (PID 27884) fue terminado por una excepción 0x40010004
+2024-12-12 11:46:15.280 GMT [4724] DETALLE:  El proceso que falló estaba ejecutando: /*pga4dash*/
+	SELECT
+	    pid,
+	    datname,
+	    usename,
+	    application_name,
+	    client_addr,
+	    pg_catalog.to_char(backend_start, 'YYYY-MM-DD HH24:MI:SS TZ') AS backend_start,
+	    state,
+	    wait_event_type || ': ' || wait_event AS wait_event,
+	    array_to_string(pg_catalog.pg_blocking_pids(pid), ', ') AS blocking_pids,
+	    query,
+	    pg_catalog.to_char(state_change, 'YYYY-MM-DD HH24:MI:SS TZ') AS state_change,
+	    pg_catalog.to_char(query_start, 'YYYY-MM-DD HH24:MI:SS TZ') AS query_start,
+	    pg_catalog.to_char(xact_start, 'YYYY-MM-DD HH24:MI:SS TZ') AS xact_start,
+	    backend_type,
+	    CASE WHEN state = 'active' THEN ROUND((extract(epoch from now() - query_start) / 60)::numeric, 2) ELSE 0 END AS active_since
+	FROM
+	    pg_catalog.pg_stat_activity
+	WHERE
+	    datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 114688)ORDER BY pid
+2024-12-12 11:46:15.280 GMT [4724] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-12-12 11:46:15.281 GMT [4724] LOG:  terminando todos los otros procesos de servidor activos
+2024-12-12 11:46:15.302 GMT [28024] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-12-12 11:46:15.302 GMT [28024] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-12-12 11:46:15.302 GMT [28024] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-12-12 11:46:15.304 GMT [27740] WARNING:  terminando la conexiÃ³n debido a una falla en otro proceso servidor
+2024-12-12 11:46:15.304 GMT [27740] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacciÃ³n en curso y finalice la conexiÃ³n, porque otro proceso servidor ha terminado anormalmente y podrÃ­a haber corrompido la memoria compartida.
+2024-12-12 11:46:15.304 GMT [27740] HINT:  Dentro de un momento deberÃ­a poder reconectarse y repetir la consulta.
+2024-12-12 11:46:15.372 GMT [20964] WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2024-12-12 11:46:15.372 GMT [20964] DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2024-12-12 11:46:15.372 GMT [20964] HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2024-12-12 11:46:15.476 GMT [4724] LOG:  todos los procesos fueron terminados; reinicializando
+2024-12-12 11:46:15.603 GMT [4724] LOG:  proceso de inicio (PID 21912) fue terminado por una excepción 0xC000026B
+2024-12-12 11:46:15.603 GMT [4724] HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2024-12-12 11:46:15.604 GMT [4724] LOG:  abortando el inicio debido a una falla en el procesamiento de inicio
+2024-12-12 11:46:15.614 GMT [4724] LOG:  el sistema de bases de datos está apagado
+2024-12-18 04:03:35.066 GMT [35276] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-12-18 04:03:35.071 GMT [35276] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-12-18 04:03:35.071 GMT [35276] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-12-18 04:03:35.174 GMT [22036] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-12-18 03:13:13 GMT
+2024-12-18 04:03:38.012 GMT [22036] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-12-18 04:03:38.020 GMT [22036] LOG:  redo comienza en 0/32815E0
+2024-12-18 04:03:38.021 GMT [22036] LOG:  largo de registro no válido en 0/32816C8: se esperaba 24, se obtuvo 0
+2024-12-18 04:03:38.021 GMT [22036] LOG:  redo listo en 0/3281690
+2024-12-18 04:03:38.097 GMT [35276] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-12-18 12:27:07.133 GMT [23504] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-12-18 12:27:07.153 GMT [23504] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-12-18 12:27:07.153 GMT [23504] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-12-18 12:27:07.490 GMT [23132] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-12-18 11:38:39 GMT
+2024-12-18 12:27:21.274 GMT [23132] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-12-18 12:27:21.324 GMT [23132] LOG:  redo comienza en 0/32BBFE8
+2024-12-18 12:27:21.325 GMT [23132] LOG:  largo de registro no válido en 0/32BC0E8: se esperaba 24, se obtuvo 0
+2024-12-18 12:27:21.325 GMT [23132] LOG:  redo listo en 0/32BC0B0
+2024-12-18 12:27:21.548 GMT [23504] LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2024-12-18 12:30:01.075 GMT [25160] LOG:  iniciando PostgreSQL 12.20, compiled by Visual C++ build 1940, 64-bit
+2024-12-18 12:30:01.085 GMT [25160] LOG:  escuchando en la dirección IPv6 «::1», port 5432
+2024-12-18 12:30:01.085 GMT [25160] LOG:  escuchando en la dirección IPv4 «127.0.0.1», port 5432
+2024-12-18 12:30:01.195 GMT [23980] LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2024-12-18 12:27:21 GMT
+2024-12-18 12:30:07.677 GMT [23980] LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2024-12-18 12:30:07.695 GMT [23980] LOG:  redo comienza en 0/32BC160
+2024-12-18 12:30:07.695 GMT [23980] LOG:  largo de registro no válido en 0/32BC198: se esperaba 24, se obtuvo 0
+2024-12-18 12:30:07.695 GMT [23980] LOG:  redo listo en 0/32BC160
+2024-12-18 12:30:07.827 GMT [25160] LOG:  el sistema de bases de datos está listo para aceptar conexiones
